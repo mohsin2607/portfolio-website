@@ -8,7 +8,7 @@ const projectList = [
         title: "Developer Productivity Dashboard",
         description: "Creating a dashboard to help developers monitor projects, repositories, and development activities with analytics and performance visualization.",
         techStack: ["React.js", "Node.js", "PostgreSQL"],
-        image: "projects/project1.jpeg",
+        image: "assets/projects/project1.jpeg",
         live: "#",
         github: "#"
     },
@@ -18,7 +18,7 @@ const projectList = [
         title: "Smart Inventory Management System",
         description: "Building a scalable inventory management platform with secure authentication, inventory tracking, analytics dashboard, and report generation.",
         techStack: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
-        image: "projects/project2.jpeg",
+        image: "assets/projects/project2.jpeg",
         live: "#",
         github: "#"
     },
@@ -28,7 +28,7 @@ const projectList = [
         title: "AI-Powered Learning Assistant",
         description: "Developing an AI-powered learning assistant that provides personalized learning paths, quizzes, and intelligent study recommendations.",
         techStack: ["React.js", "Node.js", "OpenAI API", "MongoDB"],
-        image: "projects/project3.jpeg",
+        image: "assets/projects/project3.jpeg",
         live: "#",
         github: "#"
     },
@@ -38,7 +38,7 @@ const projectList = [
         title: "Real-Time Collaboration Platform",
         description: "Building a collaborative platform with real-time messaging, document sharing, notifications, and team workspace management.",
         techStack: ["React.js", "Node.js", "Socket.io", "MongoDB"],
-        image: "projects/project4.jpeg",
+        image: "assets/projects/project4.jpeg",
         live: "#",
         github: "#"
     }

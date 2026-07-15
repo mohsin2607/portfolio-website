@@ -125,52 +125,52 @@ aboutTabs.forEach((tab) => {
                 {
                     id: 1,
                     name: "HTML",
-                    image: "skills/html.png.jpeg"
+                    image: "assets/skills/html.png.jpeg"
                 },
                 {
                     id: 2,
                     name: "CSS",
-                    image: "skills/css.png.jpeg"
+                    image: "assets/skills/css.png.jpeg"
                 },
                 {
                     id: 3,
                     name: "JavaScript",
-                    image: "skills/js.png.jpeg"
+                    image: "assets/skills/js.png.jpeg"
                 },
                 {
                     id: 4,
                     name: "React",
-                    image: "skills/react.png.jpeg"
+                    image: "assets/skills/react.png.jpeg"
                 },
                 {
                     id: 5,
                     name: "Node.js",
-                    image: "skills/node.png.jpeg"
+                    image: "assets/skills/node.png.jpeg"
                 },
                 {
                     id: 6,
                     name: "Bootstrap",
-                    image: "skills/bootstrap.png.jpeg"
+                    image: "assets/skills/bootstrap.png.jpeg"
                 },
                 {
                     id: 7,
                     name: "MongoDB",
-                    image: "skills/mongodb.png.jpeg"
+                    image: "assets/skills/mongodb.png.jpeg"
                 },
                 {
                     id: 8,
                     name: "Git",
-                    image: "skills/git.png"
+                    image: "assets/skills/git.png"
                 },
                 {
                     id: 9,
                     name: "GitHub",
-                    image: "skills/github.png"
+                    image: "assets/skills/github.png"
                 },
                 {
                     id: 10,
                     name: "C++",
-                    image: "skills/c++logo.png"
+                    image: "assets/skills/c++logo.png"
                 }
             ];
             const skillContent = skillsList.map((skill) => {
