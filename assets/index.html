@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsin Prtfolio Website | HTML, CSS,JAVScript,phosphour icons.</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="brand-info">
+                <img src="" alt="Logo" title="Logo" loading="lazy">
+                <h2>Portfolio</h2>
+            </div>
+            <input type="checkbox" id="menu-toggle" hidden />
+            <div class="menu-area">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="ph ph-list"></i>
+
+                </label>
+                <label for="menu-toggle" id="overlay"></label>
+            </div>
+            <nav>
+                <a href="#" style="--i:1" data-tab="home" class="navlink active">Home</a>
+                <a href="#" style="--i:1" data-tab="services" class="navlink">Services</a>
+                <a href="#" style="--i:2" data-tab="about" class="navlink">About</a>
+                <a href="#" style="--i:3" data-tab="projects" class="navlink">Projects</a>
+                <a href="#" style="--i:4" data-tab="contact" class="navlink">Contact</a>
+            </nav>
+        </header>
+
+        <section id="home" class="content active home">
+            <div class="details">
+                <h2>
+                    <span>Md Mohsin</span>
+                    Alam
+                </h2>
+                <h3>
+                    I'm
+                    <span id="typing-span"></span>
+                </h3>
+                <p>Hi, I'm Md Mohsin Alam, an aspiring Software Engineer passionate about
+                    building modern, responsive,and user-friendly web applications.
+                    I enjoy solving real-world problems through clean and efficient code
+                    while continuously learning new technologies. My goal is to create meaningful digital solutions that
+                    make a positive impact.</p>
+                <div class="bottom">
+                    <a href="projects/Md_Mohsin_Alam_Resume.pdf" download="">
+                        <button class="btn">Download CV</button>
+                    </a>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/mohsin2607" target="_blank" title="GitHub">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/md-mohsin-alam-b38a2a377" target="_blank" title="LinkedIn">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+
+                        <a href="https://leetcode.com/u/MdMohsinAlam/" target="_blank" title="LeetCode">
+                            <i class="ph ph-code"></i>
+                        </a>
+
+                        <a href="https://x.com/MohsinAlig6x6e" target="_blank" title="X (Twitter)">
+                            <i class="ph ph-x-logo"></i>
+                        </a>
+
+                        <a href="mailto:mohsinalig309@gmail.com" title="Email">
+                            <i class="ph ph-envelope-simple"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="projects/profile.jpg.jpeg" alt="profile picture" title="profile picture" loading="lazy">
+            </div>
+        </section>
+        <section id="services" class="content">
+            <h2>My<span> Services</span></h2>
+            <div class="services-list">
+            </div>
+        </section>
+        <section id="about" class="content">
+            <div class="sidebar">
+                <h3>Why Hire Me</h3>
+                <p>I am passionate about software development and enjoy building modern, responsive, and user-friendly
+                    web applications. I continuously explore new technologies and focus on writing clean, efficient, and
+                    maintainable code. As a quick learner, I am always ready to take on new challenges and contribute to
+                    meaningful projects.</p>
+                <div class="tabs">
+                    <span data-tab="experience" class="tab">Experience</span>
+                    <span data-tab="education" class="tab">Education</span>
+                    <span data-tab="skills" class="tab">Skills</span>
+                    <span data-tab="about-me" class="tab">About Me</span>
+                </div>
+            </div>
+
+            <aside id="experience" class="tab-content active">
+                <h2>My <span>Experience</span></h2>
+                <p>Currently working as a Software Engineering Intern, building responsive web interfaces using HTML,
+                    CSS, JavaScript, and React. Collaborating on real-world projects while continuously improving
+                    frontend development and problem-solving skills.</p>
+                <div class="experience-list">
+                </div>
+            </aside>
+            <aside id="education" class="tab-content">
+                <h2>My <span>Education</span></h2>
+                <p>Here are my educational qualifications that have built a strong foundation in technical knowledge,
+                    problem-solving, and continuous learning.</p>
+                <div class="education-list"></div>
+
+            </aside>
+            <aside id="skills" class="tab-content">
+                <h2>My <span>Skills</span></h2>
+                <p>Here are the technical skills I have developed through continuous learning and hands-on projects. I
+                    enjoy building responsive, user-friendly web applications while constantly improving my
+                    problem-solving and development skills.</p>
+                <div class="skills-list"></div>
+
+            </aside>
+            <aside id="about-me" class="tab-content">
+                <h2>About<span> Me</span></h2>
+                <p>I'm a passionate and dedicated developer who enjoys building responsive, user-friendly web
+                    applications while continuously learning new technologies and improving my problem-solving skills.
+                </p>
+                <div class="my-info"></div>
+            </aside>
+        </section>
+
+        <section id="projects" class="content">
+
+            <div class="projects">
+            </div>
+
+        </section>
+
+        <section id="contact" class="content">
+            <div class="contact-info">
+                <h2>Let's Work<span> Together</span></h2>
+                <p>I'm passionate about building modern web applications and continuously improving my skills in
+                    software development. I enjoy solving problems, learning new technologies, and working on meaningful
+                    projects. If you'd like to collaborate or have an opportunity, feel free to get in touch.</p>
+                <div class="contact-media">
+                </div>
+            </div>
+            <form action="#" id="contact-form">
+                <fieldset>
+                    <legend><span>Contact</span>
+                        Me !
+                    </legend>
+                    <div class="fields">
+                        <div>
+                            <label for="name">Name :</label>
+                            <input type="text" name="name" id="name" placeholder="Mohsin" required />
+                        </div>
+                        <div>
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" id="email" placeholder="mohsin@gmail.com" required />
+                        </div>
+                        <div>
+                            <label for="phone">Phone :</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+919999999999" />
+                        </div>
+
+                        <div>
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="message" cols="30" rows="5"
+                                placeholder="Hello Mohsin !" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn" id="send-msg">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <script src="script.js" type="module" defer></script>
+    <script src="about.js" type="module" defer></script>
+    <script src="projects.js" type="module" defer></script>
+    <script src="contact.js" type="module" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey:"-EWWALghvShUvInSL",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

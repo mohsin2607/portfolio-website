@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+:root{
+    --primary: #030a16;
+    --secondary: #323946;
+    --disabled: #fff3;
+    --green: #7cf03d;
+    --white: #fff;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Ancizar Sans", sans-serif;
+}
+body,
+html{
+    background-color: var(--primary);
+    color: var(--white);
+    min-height: 100%;
+    overflow-x: hidden;
+    transition: all 03s ease;
+}
+main{
+    font-weight: bold;
+    margin-top: -5px;
+}
+body.no-scroll{
+    overflow: hidden;
+    height: 100vh;
+}
+.main-container{
+    max-width: 700px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.brand-info img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 1rem auto;
+}
+.brand-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-info h2{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+#overlay{
+    display: none !important;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0;
+}
+#menu-toggle:checked ~ #overlay{
+    display: block;
+    position: fixed;
+    top: 7rem;
+    height: 100dvh;
+    inset: 0;
+    background: var(--primary);
+    opacity: 1;
+    pointer-events: none;
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    position: absolute;
+    background: var(--primary);
+    left: 0;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    margin: 2rem 0;
+    z-index: 1000;
+    transform: translateX(150%);
+    transition: all 0.4s ease;
+}
+#menu-toggle:checked ~ nav{
+    transform: translateX(0%);
+}
+#menu-toggle:checked ~ nav a{
+    opacity: 1;
+    transform: translateX(0%);
+    transition-delay: calc(var(--i) * 0.2s);
+}
+nav a{
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    opacity: 0;
+    transform: translate(150%);
+    transition: all 0.4s ease;
+}
+
+@media screen and (width >= 1024px) {
+    .main-container{
+        max-width: 950px;
+    }
+    header{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand-info{
+        gap: 20px;
+    }
+    .brand-info img{
+        width: 90px;
+        height: 90px;
+    }
+    .brand-info h2{
+        font-size: 2.5rem;
+    }
+    #menu-toggle{
+        pointer-events: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        position: static;
+        transform: translateX(0%);
+        margin-left: auto;
+        width: auto;
+    }
+    nav a{
+        padding: 0;
+        font-size: 1.5rem;
+        border: none;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    nav a:hover{
+        color: var(--green);
+    }
+
+}
+.navlink.active{
+    color: var(--green);
+}
+@media screen and (width >= 1300px) {
+    .main-container{
+        max-width: 1200px;
+    }
+    .brand-info{
+        gap: 35px;
+    }
+    .brand-info img{
+        width: 100px;
+        height: 100px;
+    }
+    .brand-info h2{
+        font-size: 3rem;
+    }
+    nav{
+        gap: 2.5rem;
+    }
+    nav a{
+        font-size: 2rem;
+    }
+    
+}
+.content{
+    display: none;
+
+}
+.content.active{
+    display: block;
+}
